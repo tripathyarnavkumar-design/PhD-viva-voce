@@ -57,7 +57,7 @@ html::-webkit-scrollbar{width:11px}html::-webkit-scrollbar-thumb{background:#C9C
 .menu-open .burger i:nth-child(3){transform:translateY(-3.5px) rotate(-45deg)}
 .menu-btn .lbl{font-weight:600;font-size:14.5px}
 .menu-btn .sec{font-size:14.5px;color:var(--ink-2);max-width:40vw;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;padding-left:12px;border-left:1px solid var(--line)}
-.brand{font-family:var(--f-title);font-weight:600;font-size:17px;color:var(--ink);white-space:nowrap;margin-left:6px}
+.brand{font-family:var(--f-title);font-weight:700;font-size:17px;color:var(--ink);white-space:nowrap;margin-left:6px}
 .topbar .spacer{flex:1}
 .counter{font-size:14px;color:var(--ink-2);font-variant-numeric:tabular-nums;white-space:nowrap}
 .icon-btn{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;background:var(--paper);
@@ -78,7 +78,7 @@ main#stage{padding-top:calc(var(--bar-h) + env(safe-area-inset-top,0px))}
 .slide.opener + .slide{border-top:0}
 
 /* ---------- type ---------- */
-h1,h2,h3{font-family:var(--f-title);font-weight:600;letter-spacing:-0.01em;text-wrap:balance;margin:0;color:var(--ink)}
+h1,h2,h3{font-family:var(--f-title);font-weight:700;letter-spacing:-0.01em;text-wrap:balance;margin:0;color:var(--ink)}
 .slide h2{font-size:clamp(28px,3.2vw,40px);line-height:1.15;max-width:960px}
 .slide h2 .sub{display:block;font-family:var(--f-body);font-weight:400;font-size:17px;letter-spacing:0;color:var(--muted);margin-top:10px;line-height:1.5}
 h3{font-size:22px;line-height:1.25}
@@ -96,7 +96,7 @@ p{margin:0}
 .points.compact{gap:6px;font-size:16px}
 .num-list{counter-reset:n;list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:14px;max-width:880px}
 .num-list li{counter-increment:n;display:grid;grid-template-columns:40px 1fr;gap:14px;font-size:18px;line-height:1.5;color:var(--ink)}
-.num-list li::before{content:counter(n);font-family:var(--f-title);font-weight:600;width:34px;height:34px;border-radius:50%;background:var(--accent-soft);color:var(--accent);display:grid;place-items:center;font-size:17px}
+.num-list li::before{content:counter(n);font-family:var(--f-title);font-weight:700;width:34px;height:34px;border-radius:50%;background:var(--accent-soft);color:var(--accent);display:grid;place-items:center;font-size:17px}
 
 /* layout helpers */
 .grow{min-height:0}
@@ -150,10 +150,10 @@ td .hl,.hlt{background:var(--mark-soft);color:var(--mark-ink);padding:1px 8px;bo
 .kv{display:grid;grid-template-columns:auto 1fr;gap:10px 22px;font-size:16.5px;line-height:1.55}
 .kv dt{font-weight:600;color:var(--ink)}.kv dd{margin:0;color:var(--ink-2)}
 .stat-row{display:flex;gap:36px;flex-wrap:wrap}
-.stat b{display:block;font-family:var(--f-title);font-size:46px;font-weight:600;letter-spacing:-0.02em;color:var(--ink);line-height:1.05;font-variant-numeric:lining-nums}
+.stat b{display:block;font-family:var(--f-title);font-size:46px;font-weight:700;letter-spacing:-0.02em;color:var(--ink);line-height:1.05;font-variant-numeric:lining-nums}
 .stat span{font-size:14.5px;color:var(--ink-2)}
 .def{display:grid;grid-template-columns:200px 1fr;gap:16px 30px;font-size:17px;line-height:1.6;max-width:1000px}
-.def dt{font-family:var(--f-title);font-weight:600;color:var(--ink);font-size:20px}
+.def dt{font-family:var(--f-title);font-weight:700;color:var(--ink);font-size:20px}
 .def dt small{display:block;font-family:var(--f-body);font-weight:400;font-size:14px;color:var(--muted)}
 .def dd{margin:0;color:var(--ink-2)}
 
@@ -237,7 +237,7 @@ kbd{font-family:var(--f-body);font-size:11.5px;border:1px solid var(--line);bord
 /* components */
 .flow{display:flex;align-items:stretch;gap:12px}
 .flow>div{flex:1;background:var(--band);border-radius:16px;padding:18px 20px;font-size:16px;line-height:1.55;color:var(--ink-2)}
-.flow>div b{display:block;font-family:var(--f-title);font-size:19px;color:var(--ink);margin-bottom:6px;font-weight:600}
+.flow>div b{display:block;font-family:var(--f-title);font-size:19px;color:var(--ink);margin-bottom:6px;font-weight:700}
 .flow .arrow{flex:none;align-self:center;width:24px;background:none;padding:0}
 .flow .arrow svg{width:24px;height:24px;stroke:var(--muted);fill:none;stroke-width:1.6}
 .gap-card{background:var(--band);border-radius:18px;padding:22px 24px;display:flex;flex-direction:column;gap:10px}
@@ -348,7 +348,7 @@ body{background:#fff}
 .fit{left:144px!important}
 .opener .fit,.title .fit{left:144px!important}
 .chrome-top{display:none}
-.chrome-num{position:absolute;left:0;width:104px;top:30px;text-align:center;font-family:var(--f-title);font-size:34px;font-weight:600;color:var(--mark);font-variant-numeric:lining-nums}
+.chrome-num{position:absolute;left:0;width:104px;top:30px;text-align:center;font-family:var(--f-title);font-size:34px;font-weight:700;color:var(--mark);font-variant-numeric:lining-nums}
 .chrome-bot{left:144px;right:56px;height:46px;border-top:1px solid var(--line-2);font-size:13.5px}
 .chrome-bot .n{color:var(--ink-2)}
 /* ruled copybook paper on cover and section slides */
@@ -359,7 +359,7 @@ body{background:#fff}
 .fit > .mid{flex:1;display:flex;flex-direction:column;justify-content:center;gap:24px;padding:20px 0 28px;min-height:0}
 .am{display:flex;align-items:stretch;gap:0}
 .am-box{flex:1;display:flex;flex-direction:column;gap:6px;padding:20px 20px 18px;border-top:2px solid var(--accent);min-width:0}
-.am-box b{font-family:var(--f-title);font-size:21px;font-weight:600;color:var(--accent)}
+.am-box b{font-family:var(--f-title);font-size:21px;font-weight:700;color:var(--accent)}
 .am-box span{font-size:15.5px;line-height:1.5;color:var(--ink-2)}
 .am-box em{font-style:normal;font-size:13.5px;color:var(--mark);margin-top:auto}
 .am-ltm{border-top-color:var(--mark)}.am-ltm b{color:var(--mark)}
@@ -435,12 +435,12 @@ figure .frame{background:#fff;box-shadow:inset 0 0 0 1px var(--line);border-radi
 .chrome-bot{left:144px;right:56px;height:60px;border-top:1.5px solid var(--rule);font-size:17px;color:var(--ink-2)}
 .chrome-bot b{font-weight:600;color:var(--ink)}
 .chrome-bot .sec{color:var(--accent);font-weight:600}
-.chrome-bot .n{font-family:var(--f-title);font-size:26px;font-weight:600;color:var(--accent)}
+.chrome-bot .n{font-family:var(--f-title);font-size:26px;font-weight:700;color:var(--accent)}
 .chrome-bot .n small{font-family:var(--f-body);font-size:15px;color:var(--muted);font-weight:400}
 .objectives{display:grid;grid-template-columns:repeat(3,1fr);gap:36px;margin-top:12px}
 .obj{display:flex;flex-direction:column;gap:10px;padding-top:18px;border-top:2px solid var(--accent)}
-.obj-n{font-family:var(--f-title);font-size:64px;line-height:.9;font-weight:600;color:var(--mark)}
-.obj b{font-family:var(--f-title);font-size:23px;font-weight:600;color:var(--ink)}
+.obj-n{font-family:var(--f-title);font-size:64px;line-height:.9;font-weight:700;color:var(--mark)}
+.obj b{font-family:var(--f-title);font-size:23px;font-weight:700;color:var(--ink)}
 .obj p{font-size:17px;line-height:1.6;color:var(--ink-2)}
 .center-x .fit > .mid{align-items:center;text-align:center}
 .defquote{margin:0;font-family:var(--f-title);font-size:34px;line-height:1.35;font-weight:400;color:var(--ink);max-width:880px;text-wrap:balance}
@@ -482,12 +482,12 @@ figcaption{font-size:var(--cap,16px);color:var(--ink-2);font-weight:500;line-hei
 .stat-grid{display:grid;grid-template-columns:repeat(2,minmax(0,max-content));gap:22px 48px}
 .insights{display:grid;grid-template-columns:repeat(3,1fr);gap:26px 40px}
 .ins{display:flex;gap:16px;align-items:flex-start}
-.ins-n{flex:none;font-family:var(--f-title);font-size:40px;line-height:.95;font-weight:600;color:var(--mark);width:30px}
+.ins-n{flex:none;font-family:var(--f-title);font-size:40px;line-height:.95;font-weight:700;color:var(--mark);width:30px}
 .ins p{font-size:17px;line-height:1.6;color:var(--ink-2)}
 .ins strong{color:var(--ink)}
 .roq{display:grid;grid-template-columns:52px 1fr 56px 1fr;align-items:stretch;column-gap:0;row-gap:0}
 .roq-h{font-size:13px;letter-spacing:.06em;text-transform:uppercase;font-weight:600;color:var(--accent);padding:0 22px 10px;border-bottom:1.5px solid var(--accent)}
-.roq-n{font-family:var(--f-title);font-size:38px;font-weight:600;color:var(--mark);display:flex;align-items:center;justify-content:center;border-bottom:1px solid var(--line-2)}
+.roq-n{font-family:var(--f-title);font-size:38px;font-weight:700;color:var(--mark);display:flex;align-items:center;justify-content:center;border-bottom:1px solid var(--line-2)}
 .roq-o,.roq-q{padding:20px 22px;font-size:17.5px;line-height:1.55;color:var(--ink);border-bottom:1px solid var(--line-2)}
 .roq-q{background:var(--accent-soft)}
 .roq-o span,.roq-q span{display:block;font-size:13px;font-weight:600;letter-spacing:.06em;color:var(--muted);margin-bottom:4px}
@@ -498,9 +498,9 @@ figcaption{font-size:var(--cap,16px);color:var(--ink-2);font-weight:500;line-hei
 .meth{display:flex;flex-direction:column;gap:14px}
 .meth::before{content:"";display:block;width:44px;height:3px;border-radius:2px;background:var(--accent)}
 .meth-top{display:flex;flex-direction:column;align-items:flex-start;gap:10px}
-.meth-rq{font-family:var(--f-title);font-size:34px;font-weight:600;color:var(--mark);line-height:1}
+.meth-rq{font-family:var(--f-title);font-size:34px;font-weight:700;color:var(--mark);line-height:1}
 .meth-q{font-size:16px;line-height:1.55;color:var(--ink-2);min-height:7.8em}
-.meth-m{font-family:var(--f-title);font-size:21px;line-height:1.35;font-weight:600;color:var(--accent)}
+.meth-m{font-family:var(--f-title);font-size:21px;line-height:1.35;font-weight:700;color:var(--accent)}
 
 .glance{display:grid;grid-template-columns:1fr 1fr;gap:26px 56px;margin:0}
 .glance > div{display:flex;flex-direction:column;gap:6px}
@@ -509,7 +509,7 @@ figcaption{font-size:var(--cap,16px);color:var(--ink-2);font-weight:500;line-hei
 .glance dd{margin:0;font-size:17.5px;line-height:1.55;color:var(--ink)}
 .tf-list{list-style:none;margin:6px 0 0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:10px 28px;counter-reset:tf}
 .tf-list li{counter-increment:tf;font-size:17px;color:var(--ink);display:flex;gap:10px;align-items:baseline;padding-bottom:8px;border-bottom:1px solid var(--rule)}
-.tf-list li::before{content:counter(tf);font-family:var(--f-title);font-weight:600;color:var(--mark);width:16px}
+.tf-list li::before{content:counter(tf);font-family:var(--f-title);font-weight:700;color:var(--mark);width:16px}
 </style>
 <style>
 /* round 9 */
@@ -545,6 +545,8 @@ figcaption{font-size:var(--cap,16px);color:var(--ink-2);font-weight:500;line-hei
 <style>.anat-row .pair{align-items:flex-start}</style>
 <style>#effLegend,#effLegendD{font-size:16px}</style>
 <style>#effChart,#effChartD{width:100%}#effLegend,#effLegendD{justify-content:center}</style>
+<style>h1,h2,h3{font-weight:700}.people .aff{color:var(--muted);font-weight:400;font-size:14px}</style>
+<style>.people .aff{order:-1;white-space:nowrap;margin-top:2px}</style>
 
 </head>
 <body>
@@ -589,12 +591,12 @@ figcaption{font-size:var(--cap,16px);color:var(--ink-2);font-weight:500;line-hei
     <h1>Systematic Assessment of Children’s Odia Handwriting Legibility</h1>
     <div class="people">
       <div class="pr"><span>Presented by</span>Arnav Kumar Tripathy<span class="roll">2020DDZ8362</span></div>
-      <div>Prof. Subir Dey<span>Supervisor</span></div>
+      <div>Prof. Subir Dey<span>Supervisor</span><span class="aff">Department of Design</span></div>
       <div></div>
       <div class="h">SRC Members</div>
-      <div>Prof. Srinivasan V.<span>Chairperson</span></div>
-      <div>Prof. Jyoti Kumar<span>Internal Expert</span></div>
-      <div>Prof. Varsha Singh<span>External Expert</span></div>
+      <div>Prof. Srinivasan V.<span>Chairperson</span><span class="aff">Department of Design</span></div>
+      <div>Prof. Jyoti Kumar<span>Internal Expert</span><span class="aff">Department of Design</span></div>
+      <div>Prof. Varsha Singh<span>External Expert</span><span class="aff">Department of Humanities and Social Sciences</span></div>
     </div>
     <div class="logos"><img src="img/logo_iitd.png" alt="Indian Institute of Technology Delhi"><img src="img/logo_dod.png" alt="Department of Design, IIT Delhi"></div>
   </div>
@@ -2086,6 +2088,19 @@ figcaption{font-size:var(--cap,16px);color:var(--ink-2);font-weight:500;line-hei
       <tr><td class="n">8</td><td>The data support “initial” or “preliminary” validation, not a fully validated, standardised tool.</td><td>Agreed. OHET is described as initially validated, and “standardised” was removed.</td></tr>
       <tr><td class="n">9</td><td>Two classrooms confound OHET with teacher, school and context; between-group change was not tested; normality and nesting.</td><td>Revised. Redescribed as a two-group pretest–posttest design; gains compared between groups (t-tests, Hedges’ g, ANCOVA); non-parametric checks added; confounding and nesting stated as limitations.</td></tr>
       <tr><td class="n">10</td><td>The thesis is very extensive; the introduction covers the history of design, visual communication, writing, typeface and typography, which may appear too broad for the research problem. Some sections could be more concise.</td><td>Justified: as a design research study, it was important first to situate the work in that domain; Section 1.1 establishes handwriting as a visual product that can be examined through typographic attributes. Key findings recur intentionally, because each interlinked study builds on the previous ones towards OHET, so the structure was retained.</td></tr>
+    </tbody></table></div>
+</section>
+
+<section class="slide" data-sec="Responses to reviewers’ comments" data-t="Key comments and revisions (3)">
+  <h2>Key comments and responses<span class="sub">Strengths noted by the reviewers</span></h2>
+  <div class="tbl-wrap grow"><table class="data sm rev-tbl">
+    <thead><tr><th style="width:4%">#</th><th style="width:26%">Strength</th><th>Comment</th></tr></thead>
+    <tbody>
+      <tr><td class="n">1</td><td class="k">Articulation of design, typography and education</td><td>Handwriting is positioned as an object of design research rather than merely a pedagogical or motor-related issue. Treating it as a <strong>visual product</strong> analysed through typographic attributes is one of the thesis’s most valuable conceptual contributions.</td></tr>
+      <tr><td class="n">2</td><td class="k">Anatomy of Odia letterforms</td><td>Chapter 4A is one of the most solid sections. The semiotic analysis (structural grid, unit strokes, syntactic, syntagmatic and paradigmatic analyses, 35 anatomical components, mandatory and auxiliary features) is a <strong>contribution to Odia typography</strong> independent of OHET.</td></tr>
+      <tr><td class="n">3</td><td class="k">Integration of multiple sources of evidence</td><td>OHET is built from three sources: the structural analysis of letters, teachers’ subjective criteria, and the prescriptive norms of readers and specialists, a <strong>sound triangulation strategy</strong>.</td></tr>
+      <tr><td class="n">4</td><td class="k">Practical orientation</td><td>The thesis has a clear applied outcome, the Odia Handwriting Evaluation Tool (OHET), an <strong>important strength in a doctorate in Design</strong>.</td></tr>
+      <tr><td class="n">5</td><td class="k">Standard of presentation</td><td>The thesis is <strong>well written, clear and carefully formatted</strong> throughout, showing a great deal of care in writing and reviewing.</td></tr>
     </tbody></table></div>
 </section>
 
