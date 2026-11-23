@@ -2294,7 +2294,7 @@ slides.forEach(s => {
     if (mid && !mid.querySelector("figure,.cols,table,.flow,.tbl-wrap")) mid.querySelectorAll(":scope > ul.points").forEach(ul => { if (ul.children.length >= 4) ul.classList.add("two-col"); });
   }
   if (!s.classList.contains("opener") && !s.classList.contains("title")) s.insertAdjacentHTML("beforeend",
-    (() => { const k = sections.findIndex(x => x.name === s.dataset.sec); const ch = sections[k] && sections[k].chap; return `${k > 0 ? `<div class="chrome-num">${ch ? (/^\d$/.test(ch) ? "0" + ch : ch) : "·"}</div><div class="chrome-sec">${esc(s.dataset.sec)}</div>` : ""}<div class="chrome-bot"><span><b>Arnav Kumar Tripathy</b> &nbsp;·&nbsp; PhD Viva-Voce</span><span class="n">${s.dataset.idx*1+1} <small>/ ${slides.length}</small></span></div>`; })());
+    (() => { const k = sections.findIndex(x => x.name === s.dataset.sec); const ch = sections[k] && sections[k].chap; return `${k > 0 ? `<div class="chrome-num">${ch ? (/^\d$/.test(ch) ? "0" + ch : ch) : "·"}</div><div class="chrome-sec">${esc(s.dataset.sec)}</div>` : ""}<div class="chrome-bot"><span><b>Arnav Kumar Tripathy</b> &nbsp;·&nbsp; PhD Viva-Voce</span><span class="n">${s.dataset.idx*1+1}</span></div>`; })());
 });
 
 // contents drawer
@@ -2333,7 +2333,7 @@ function go(i, opts={}) {
   s.classList.add("active"); if (back) s.classList.add("back");
   const sec = secOf(cur);
   $("#curSec").textContent = sec.name;
-  $("#counter").textContent = `${cur+1} / ${slides.length}`;
+  $("#counter").textContent = `${cur+1}`;
   $("#prevBtn").disabled = cur === 0; $("#nextBtn").disabled = cur === slides.length-1;
   $("#progressBar").style.setProperty("--p", (cur / (slides.length-1)).toFixed(4));
   $$(".sec-item", nav).forEach((el, n) => { const on = sections[n] === sec; el.classList.toggle("cur", on); el.classList.toggle("open", on); el.firstElementChild.setAttribute("aria-expanded", String(on)); });
